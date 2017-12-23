@@ -1,0 +1,1 @@
+start "" "https://discordapp.com/api/oauth2/authorize?client_id=369833983476760588&scope=bot&permissions=104324160"
