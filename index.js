@@ -416,7 +416,7 @@ const commands = {
 		"perm":0,
 		"func":function(args,outmethod,message,sender){
 			if(sender != "CONSOLE" && message.channel.type != "dm") outmethod("Список комманд был отправлен вам в ЛС.")
-			outmethod("Список доступных комманд:\n"+ListCommands(),{split:{char:"\n"}},message.author)
+			outmethod("Список доступных комманд:\n"+ListCommands(),{split:{char:"\n"}},sender == "CONSOLE" ? undefined : message.author)
 		}
 	},
 	"помощь":{
